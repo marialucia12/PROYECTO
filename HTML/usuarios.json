@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Administrador Principal"
+    },
+    {
+      "username": "asesor1",
+      "password": "asesor123",
+      "role": "asesor",
+      "name": "Asesor Comercial"
+    },
+    {
+      "username": "doctor1",
+      "password": "doctor123",
+      "role": "doctor",
+      "name": "Doctor Especialista"
+    }
+  ]
+}

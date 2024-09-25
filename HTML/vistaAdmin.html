@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador | Óptica FG Visual Center</title>
+    <link rel="stylesheet" href="/PROYECTO/CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Óptica FG Visual Center - Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="vistaAdmin.html">Inicio</a></li>
+                <li><a href="login.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+        <span id="user-name"></span>
+    </header>
+
+    <section class="seccion">
+        <h2>Gestión de Usuarios</h2>
+        <table id="users-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Usuario</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="seccion">
+        <h2>Añadir Usuario</h2>
+        <form id="user-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" required>
+
+            <label for="rol">Rol:</label>
+            <select id="rol" required>
+                <option value="asesor">Asesor</option>
+                <option value="doctor">Doctor</option>
+                <option value="cliente">Cliente</option>
+            </select>
+
+            <button type="submit">Añadir Usuario</button>
+        </form>
+        <p id="user-message" style="display:none; color:green;">Usuario añadido exitosamente</p>
+    </section>
+</body>
+</html>
